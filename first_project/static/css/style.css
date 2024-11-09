@@ -1,0 +1,496 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.konten{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Navbar */
+.btn {
+    font-size: small;
+    padding: 8px 16px;
+    margin-left: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-link {
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #005cdd;
+}
+
+.navbar {
+    position: fixed; /* Posisi tetap di atas */
+    top: 0; /* Posisi dari atas */
+    width: 100%; /* Lebar penuh layar */
+    z-index: 1000; /* Tingkatkan z-index untuk menempatkan di atas elemen lainnya */
+    background-color: #ffffff; /* Tambahkan latar belakang */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    transition: transform 0.5s ease, top 0.5s ease; /* Transisi yang lebih halus dan lembut */
+    transform: translateY(0); /* Posisi awal header */
+}
+
+ /* Menyembunyikan header */
+        .navbar.hidden {
+            top: -80px; /* Menggeser header ke atas di luar tampilan */
+        }
+
+
+/* Hero Section */
+.hero-section {
+    background: url('/static/images/Bg-Hero-Section.jpg') no-repeat center center;
+    background-size: cover; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.button-Coba {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Styling untuk custom card */
+.custom-card {
+    width: 18rem;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+}
+
+/* Styling untuk gambar */
+.image-wrapper {
+    padding: 15px; 
+    background: linear-gradient(135deg, #c72c3b, #ff4d4d);
+    border-radius: 15px 15px 0 0; 
+}
+
+.custom-card-img {
+    width: 100%;
+    border-radius: 15px 15px; 
+}
+
+.custom-h2 {
+    margin-bottom: 50px !important; /* Margin bawah untuk header 2 */
+    font-weight: 700;
+}
+
+/* Why Must Section */
+.kotak {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 16px;
+    padding: 46px 44px;
+    box-shadow: 0px 0px 28px -7px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 0px 28px -7px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 28px -7px rgba(0,0,0,0.25);
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Pastikan elemen di dalamnya tidak memanjang */
+}
+
+.guru-container {
+    padding: 20px;
+}
+
+.statistik-container {
+    padding: 20px
+}
+
+.second-btn {
+    text-decoration: none;
+    background-color: #D6E8FC;
+    padding: 10px 19px;
+    border-radius: 16px;
+    margin-top: auto;
+    width: auto; /* Pastikan lebar menyesuaikan dengan teks */
+    display: inline-block; /* Pastikan button tidak mengambil lebar penuh */
+    max-width: 100%; /* Pastikan button tidak melebihi kolomnya */
+}
+
+/* Trust Card Section */
+.trust-card {
+    background-color: #C1E8FF;
+}
+
+.text-trust p{
+    color: #333;
+    font-size: 14px;
+}
+
+.icon-trust img {
+    border-radius: 10px;
+    width: 55px;
+    height: auto;
+}
+
+/* About Us Section */
+  .about-us-section {
+    padding: 50px 0;
+    background: url('/picAsset/Bg-Hero-Section.jpg') no-repeat center center;
+    background-size: cover; 
+  }
+
+  .about-us-section p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* About Us Cards Section */
+  .card-container {
+    display: flex;
+    justify-content: center; /* Centered horizontally */
+    align-items: center; /* Centered vertically if needed */
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%; /* Ensure container does not overflow */
+    margin: 0 auto; /* Center the container */
+  }
+
+  /* Card Styling */
+  .card {
+    border-radius: 15px; /* Rounded corners */
+    border: 2px solid #007bff; /* Blue border */
+    transition: transform 0.3s ease; /* Animation on hover */
+  }
+  
+  .card-body {
+    background-color: #fff; /* White background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    color: #333;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Zoom on hover */
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+  }
+  
+  /* Team Section */
+  .team-section {
+    padding: 50px 0;
+    background-color: #fff; /* Background color of the team section */
+    text-align: center; /* Center text */
+  }
+  
+  .team-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap if needed */
+    justify-content: center; /* Center align */
+    gap: 20px; /* Space between team cards */
+    padding: 20px;
+  }
+  
+  .team-card {
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #007bff; 
+    width: 250px; /* Width of team card */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0px 0px 28px -7px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease; /* Animation on hover */
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  .team-card:hover {
+    transform: scale(1.05); /* Zoom on hover */
+  }
+  
+  .team-card img {
+    width: 100px; /* Image width */
+    height: 100px; /* Image height */
+    border-radius: 50%; /* Round shape */
+    margin: 0 auto 15px; /* Center image and space below */
+    border: 2px solid #fff; /* White border around image */
+  }
+  
+  .team-card h4 {
+    font-size: 1.5rem; /* Font size for name */
+    margin-bottom: 10px; /* Space below name */
+  }
+  
+  .team-card p {
+    font-size: 1rem; /* Font size for position */
+    margin-bottom: auto; /* Take up available space */
+  }
+  
+  .social-icon {
+    display: flex;
+    justify-content: center; /* Center align icons */
+    margin-top: 10px; /* Space above icons */
+  }
+  
+  .social-icon a {
+    margin-right: 10px; /* Space between icons */
+    color: #333; /* Icon color */
+    font-size: 18px; /* Icon size */
+  }
+  
+  .social-icon a:hover {
+    color: #007bff;
+  }
+
+  /* Untuk bagian pilih mentor/guru */
+.custom {
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h5 {
+    margin-bottom: 20px;
+}
+
+.container .col-md-6 {
+    padding: 20px;
+}
+
+.dropdown button {
+    font-size: 15px;
+    background-color: #d7dbe1;
+    color: rgb(130, 122, 122);
+}
+
+.dropdown button:hover{
+    background-color: #d7dbe1; /* Mengbah warna background saat hover */
+    color: #696565; /* Mengubah warna teks saat hover */
+}
+
+.mentor-img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.mentor-img img {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu {
+    max-height: 150px;
+    overflow-y: auto; /*Untuk men-scroll pada bagian pilih mentor */
+}
+
+.jarak-footer {
+    margin-bottom: 150px;
+}
+/* Container untuk menempatkan kartu dengan rapi */
+.packages {
+  display: flex;
+  flex-wrap: wrap; /* Agar card bisa turun ke bawah pada layar kecil */
+  justify-content: center;
+  gap: 20px; /* Jarak antar card */
+  margin: 30px 20px;
+}
+
+/* Styling untuk card */
+.card {
+  width: 400px; /* Lebar tetap untuk card */
+  max-width: 100%; /* Agar responsif di layar kecil */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-top: 10px solid;
+  transition: transform 0.3s, box-shadow 0.3s; /* Animasi efek hover */
+}
+
+/* Efek saat hover pada card */
+.card:hover {
+  transform: scale(1.05); /* Sedikit perbesar saat di-hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling untuk header card */
+.head {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* List fitur */
+.features {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+} 
+
+.icon {
+  flex: 0 0 30px; /* Beri lebar tetap untuk ikon agar konsisten */
+  text-align: center; /* Ikon di tengah secara horizontal */
+}
+
+.text {
+  flex: 1; /* Buat teks memenuhi sisa ruang */
+  text-align: left; /* Teks rata kiri */
+  font-size: 18px;
+}
+
+.basic {
+  border-color: red;
+}
+
+.basic .head {
+  background-color: red;
+}
+
+.epic {
+  border-color: rgb(0, 153, 255);
+}
+
+.epic .head {
+  background-color: rgb(0, 153, 255);
+}
+
+.mythic {
+  border-color: orange;
+}
+
+.mythic .head {
+  background-color: orange;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 576px) {
+.card {
+  width: 90%; /* Lebar card mengikuti layar kecil */
+}
+}
+
+.accordion-button {
+    font-weight: bold;
+    color: #333;
+}
+
+.accordion-body {
+    font-size: 16px;
+}
+/* Gaya untuk latar belakang footer */
+.foot-section {
+    background-color: #e8f1fc; /* Warna latar belakang biru lembut */
+    font-size: 1rem; /* Mengatur ukuran teks dasar dalam footer */
+}
+
+/* Ukuran teks untuk tautan di footer */
+.foot-section a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: #000; /* Warna teks tautan gelap */
+    font-size: 0.9rem; /* Mengatur ukuran teks tautan */
+}
+
+.foot-section p {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: #000; /* Warna teks tautan gelap */
+    font-size: 0.9rem; /* Mengatur ukuran teks tautan */
+}
+
+.foot-section a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah pada tautan saat hover */
+}
+
+/* Ukuran teks untuk ikon sosial media */
+.social-icons a {
+    margin-left: 10px; /* Menambahkan jarak kiri 10px antar ikon */
+    font-size: 1rem; /* Ukuran teks atau ikon sosial media */
+}
+
+/* Ukuran dan warna untuk ikon dalam footer */
+.social-icons i {
+    font-size: 1.5rem; /* Membuat ikon lebih besar */
+}
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: none;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.scrollToTopBtn:hover {
+    background-color: #0056b3;
+}

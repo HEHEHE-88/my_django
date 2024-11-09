@@ -1,0 +1,264 @@
+<!--BARU SAMPAI LV 2 MISS KARENA AGAK LAMA MEMPELAJARI SEKALIGUS PRAKTIKNYA:)-->
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>StudIQ</title>
+
+    <!-- Link to local Bootstrap CSS and custom styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' %}">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg shadow-sm" id="navbar">
+        <div class="container-fluid px-5 py-2">
+            <!-- Tombol untuk beralih navbar pada layar yang kecil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Bagian merek/logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="{% static 'images/logoStudIQ.png' %}" alt="Bootstrap" width="auto" height="30">
+            </a>
+
+            <!-- Bagian yang dapat dilipat untuk tautan navigasi -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <!-- Tautan navigasi dengan teks tebal (fw-bold) -->
+                    <a class="nav-link fw-bold" aria-current="page" href="daftarkelas.html">Daftar Kelas</a>
+                    <a class="nav-link fw-bold" href="tentang.html">Tentang Kami</a>
+                    <a class="nav-link fw-bold" href="diskusi.html">Diskusi</a>
+                    <a class="nav-link fw-bold" href="faqs.html">FAQs</a>
+                </div>
+            </div>
+
+            <!-- Tombol rata kanan menggunakan ms-auto (margin-start: auto) -->
+            <div class="ms-auto">
+                <!-- Tombol gaya garis besar untuk login/pendaftaran, dengan sudut membulat dan teks tebal -->
+                <a href="login.html" class="btn btn-outline-primary rounded-pill fw-bold">Masuk/Daftar</a>
+
+                <!-- Tombol utama untuk berlangganan, juga dengan sudut membulat dan teks tebal -->
+                <a href="langganan.html" class="btn btn-primary rounded-pill fw-bold">Berlangganan</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="konten">
+
+        <section class="wrapper p-10">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="container text-center">
+                    <h1 class="fw-bold text-dark">Bosan dengan pelajaran di sekolah?<br>Ayo Ikut Bimbel online di StudIQ!</h1>
+                    <p>Bimbel online paling interaktif dengan fitur yang lengkap dengan layanan terbaik<br>solusi untuk anak-anak yang kesulitan belajar di sekolah.</p>
+                    <a href="#" class="button-Coba btn btn-primary rounded-pill">Coba gratis selama 3 hari</a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Bagian dengan Kartu Khusus -->
+        <section class="mt-5 mb-5">
+            <div class="container">
+                <h2 class="text-center mb-4 custom-h2 text-dark">STUDIQ bisa untuk siapa saja?</h2>
+                <div class="row justify-content-center">
+                    <!-- Kartu Kelas 4  -->
+                    <div class="col-md-4 mb-4 d-flex justify-content-center">
+                        <div class="custom-card sd-card"> 
+                            <div class="image-wrapper">
+                                <a href=""> <!-- Ganti dengan halaman yang diinginkan -->
+                                    <img src="{% static 'images/Pic-Kelas1.jpg' %}" alt="SD" class="custom-card-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kartu Kelas 5  -->
+                    <div class="col-md-4 mb-4 d-flex justify-content-center">
+                        <div class="custom-card sd-card">
+                            <div class="image-wrapper">
+                                <a href=""> <!-- Ganti dengan halaman yang diinginkan -->
+                                    <img src="{% static 'images/Pic-Kelas2.jpg' %}" alt="SD" class="custom-card-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kartu Kelas 6 -->
+                    <div class="col-md-4 mb-4 d-flex justify-content-center">
+                        <div class="custom-card sd-card"> 
+                            <div class="image-wrapper">
+                                <a href=""> <!-- Ganti dengan halaman yang diinginkan -->
+                                    <img src="{% static 'images/Pic-Kelas3.jpg' %}" alt="SD" class="custom-card-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Isi Section -->
+        <section class="why-must mt-5 mb-5">
+            <div class="container">
+                <h2 class="text-center mb-4 custom-h2 text-dark">Kenapa harus StudIQ?</h2>
+                <div class="kotak mt-5">
+                    <div class="row">
+                        <div class="video-container col-md-6 mb-3">
+                            <h3 class="fw-bold text-dark">Video Pembelajaran yang  interaktif,
+                                relevan dengan kurikulum di sekolah</h3>
+                            <p>Pelajaran IPA, English, Matematika berbasis kurikulum 2013 hingga Kurikulum Merdeka</p>
+                            <a href="#" class="second-btn fw-bold">Buka Video</a>
+                        </div>
+                        <div class="col-md-6">
+                            <iframe width="100%" height="350" src="https://www.youtube.com/embed/eOZYJT0tsys?si=3Zd2yc6UptSbCvIK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 15px; overflow: hidden;">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="kotak mt-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="fw-bold text-dark">Tersedia fitur diskusi langsung, 
+                                dengan guru dan mentor yang profesional</h3>
+                            <p>Memudahkan kamu untuk bertanya langsung, materi yang belum kamu pahami</p>
+                            <a href="/diskusi/index.html" class="second-btn fw-bold">Coba fitur diskusi</a>
+                        </div>
+                        <div class="guru-container col-md-6">
+                            <img class="float-end" src="{% static 'images/Pic-isi3.png' %}"alt="gambar">
+                            <img class="float-end" src="{% static 'images/Pic-isi2.png' %}"alt="gambar">
+                            <img class="float-end" src="{% static 'images/Pic-isi1.png' %}"alt="gambar">
+                        </div>
+                    </div>
+                </div>
+                <div class="kotak mt-5">
+                    <div class="row">
+                        <div class="statistik-container col-md-6">
+                            <h3 class="fw-bold text-dark">StudIQ sudah dipercaya oleh ribuan murid Indonesia</h3>
+                            <p>StudIQ tidak akan berhenti sampai seluruh anak SD di Indonesia mendapatkan pengalaman belajar yang berbeda</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-lg-6 mb-3">
+                                    <div class="trust-card d-flex p-3 rounded align-items-center gap-3">
+                                        <div class="icon-trust">
+                                            <img src="{% static 'images/medal-trust.png' %}" alt="medal">
+                                        </div>
+                                        <div class="text-trust">
+                                            <p class="fw-bold mb-0" >10000+ siswa sudah bergabung bersama kami</p>
+                                            <p class="mb-0">Tersebar diseluruh Indonesia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-3">
+                                    <div class="trust-card d-flex p-3 rounded align-items-center gap-3">
+                                        <div class="icon-trust">
+                                            <img src="{% static 'images/people-trust.png' %}" alt="medal">
+                                        </div>
+                                        <div class="text-trust">
+                                            <p class="fw-bold mb-0" >Didukung oleh Tenaga ahli</p>
+                                            <p class="mb-0">Bekerja sama dengan para ahli untuk kualitas konten</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-3">
+                                    <div class="trust-card d-flex p-3 rounded align-items-center gap-3">
+                                        <div class="icon-trust">
+                                            <img src="{% static 'images/love-trust.png' %}" alt="medal">
+                                        </div>
+                                        <div class="text-trust">
+                                            <p class="fw-bold mb-0" >Rata-rata 90% orang tua merasa puas</p>
+                                            <p class="mb-0">Terjadi peningkatan nilai setelah mengikuti bimbel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-3">
+                                    <div class="trust-card d-flex p-3 rounded align-items-center gap-3">
+                                        <div class="icon-trust">
+                                            <img src="{% static 'images/playing-children-trust.png' %}" alt="medal">
+                                        </div>
+                                        <div class="text-trust">
+                                            <p class="fw-bold mb-0" >Terintegrasi dengan Fitur yang lebih interaktif</p>
+                                            <p class="mb-0">memberikan pengalaman belajar yang lebih menarik</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bagian Footer -->
+    <footer class="foot-section py-0">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <p class="mb-0 text-dark fw-bold">
+                    Copyright &copy; StudIQ Development Team. Hak Cipta Dilindungi.
+                </p>
+                <div class="d-flex align-items-center mx-3 social-icons">
+                    <a href="/" class="text-dark mx-2">Kebijakan Privasi</a>
+                    <span class="text-white"></span>
+                    <a href="/" class="text-dark mx-2">Ketentuan Layanan</a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a> <!-- Ikon YouTube -->
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a> <!-- Ikon Facebook -->
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a> <!-- Ikon Instagram -->
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a> <!-- Ikon LinkedIn -->
+                </div>
+            </div>
+        </div>
+        <button id="scrollToTopBtn" class="scrollToTopBtn" title="Kembali ke atas"><i class="fas fa-chevron-up"></i></button>
+    </footer>
+
+    <script>
+        // JavaScript untuk mengontrol navbar
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+            const navbar = document.getElementById("navbar");
+
+            if (window.scrollY > lastScrollY) {
+                // Jika menggulir ke bawah, sembunyikan navbar
+                navbar.classList.add("hidden");
+            } else {
+                // Jika menggulir ke atas, tampilkan navbar
+                navbar.classList.remove("hidden");
+            }
+
+            lastScrollY = window.scrollY; // Perbarui posisi scroll terakhir
+        });
+    </script>
+
+    <script>
+        // Mendapatkan tombol
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        // Menampilkan tombol ketika pengguna menggulir ke bawah
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // Mengatur fungsi untuk tombol saat diklik
+        scrollToTopBtn.onclick = function() {
+            document.body.scrollTop = 0; // Untuk Safari
+            document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE dan Opera
+        };
+
+    </script>
+
+    <!-- Bootstrap JS and Custom Script -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script> <!-- Menghubungkan file JavaScript Bootstrap dari folder lokal -->
+    <script src="{% static 'js/all.min.js' %}"></script> <!-- Font Awesome JS untuk ikon sosial -->
+</body>
+</html>
